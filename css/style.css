@@ -1,0 +1,123 @@
+*
+{
+padding: 0px;
+margin: 0px;
+font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body.bgIMG
+{
+	min-height: 100vh;
+	background-image: url('../img/bg_banner.jpg');
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	justify-content: center;
+	background-repeat: no-repeat;
+}
+
+.logotype{
+	width: 100%;
+	display: block;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.01) 99%, rgba(254,254,254,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(99%, rgba(255,255,255,0.01)), color-stop(100%, rgba(254,254,254,0)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.01) 99%, rgba(254,254,254,0) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.01) 99%, rgba(254,254,254,0) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.01) 99%, rgba(254,254,254,0) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.01) 99%, rgba(254,254,254,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe', GradientType=0 );
+	height: 18vh;
+	top: 0px;
+	position: absolute;
+}
+
+.logochedr{
+	max-width: 24vw;
+	min-width: 18vw;
+	padding: 10px 0;
+}
+
+.divmiddle{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.inform{
+	position: absolute;
+	top: 15vh;
+}
+
+.textes{
+	color: #FFF;
+	text-shadow: 1px 1px 3px #0053a0;
+}
+
+h1.textes{
+	padding: 35px 0;
+	font-size: 42px;
+}
+
+p.textes{
+	padding: 20px;
+	font-size: 32px;
+}
+
+img.icons{
+	max-width: 12em;
+	min-width: 8em;
+}
+
+.icons:hover{
+	-webkit-filter: drop-shadow(10px 50px 20px #FFF)
+    drop-shadow(-10px -20px 20px #FFF);
+    filter: drop-shadow(10px 20px 20px #FFF)
+    drop-shadow(-10px -20px 20px #FFF);
+}
+
+.footdynamic{
+	width: 100%;
+	display: fixed;
+	height: auto;
+	bottom: 0px;
+	position: absolute;
+}
+
+@media only screen and (max-width: 776px) {
+  .logochedr{
+  	width: 100px;
+  	}
+
+  .divmiddle{
+	margin-top: 70px;
+	margin-bottom: 0px;	
+	}
+
+  .inform{
+	top: 10vh;
+	}
+
+	img.icons{
+	max-width: 75px;
+	}
+
+	h1.textes{
+		font-size: 28px;
+	}
+
+	p.textes{
+		font-size: 20px;
+	}
+
+	.iconos{
+		margin-top: 5vh;
+	}
+
+	.footdynamic{
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+	position: relative !important;
+}
+}
