@@ -55,13 +55,13 @@ body.bgIMG
 }
 
 h1.textes{
-	padding: 35px 0;
+	padding-bottom: 20px;
 	font-size: 42px;
 }
 
 p.textes{
-	padding: 20px;
-	font-size: 32px;
+	padding-bottom: 20px;
+	font-size: 28px;
 }
 
 img.icons{
@@ -78,10 +78,29 @@ img.icons{
 
 .footdynamic{
 	width: 100%;
-	display: fixed;
+	display: block;
 	height: auto;
 	bottom: 0px;
+	position: fixed;
+}
+
+.logoleft{
+	height: auto;
+	width: 13em;
+	padding: 1em;
+}
+
+.logoright{
+	height: auto;
+	width: 10em;
 	position: absolute;
+	right: 1em;
+	padding-top: 1em;
+}
+
+.logocenter{
+	 width: 10em;
+	 padding-bottom: 1em;
 }
 
 @media only screen and (max-width: 776px) {
@@ -120,4 +139,16 @@ img.icons{
 	bottom: 0px;
 	position: relative !important;
 }
+
+	.logoleft{
+		width: 8em;
+	}
+
+	.logoright{
+		width: 6em;
+	}
+
+	.logocenter{
+		width: 7em;
+	}
 }
